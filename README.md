@@ -46,3 +46,14 @@ spring run ./app.groovy
 ```
 and navigate to [locahost:8080](http://localhost:8080)
 where you should see a "Hello World" message.
+
+You will then be able to run this Spring Boot application in its current form with the following:
+```
+mvn clean package spring-boot:run
+```
+provided that you have already run `brew install maven` beforehand.
+If you now navigate to the [/api/hola](http://localhost:8080/api/hola) endpoint that's been set up on localhost you will see
+something similar to the following:
+```
+Hola Spring Boot de 192.168.1.120
+```
