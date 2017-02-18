@@ -29,3 +29,20 @@ should give you this output:
 ```
 Spring CLI v1.5.1.RELEASE
 ```
+Double check the version of java you have with:
+```
+java -version
+```
+which should ideally give you something along the lines of:
+```
+java version "1.8.0_121"
+```
+If you're using a mac then if you're still on 1.6 then I would suggest using brew
+to install the latest version of java.
+
+To check that your springboot version works fine, run the following:
+```
+spring run ./app.groovy
+```
+and navigate to [locahost:8080](http://localhost:8080)
+where you should see a "Hello World" message.
